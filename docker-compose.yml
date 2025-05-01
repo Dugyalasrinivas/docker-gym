@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  gym-website:
+    image: nginx:latest
+    ports:
+      - "4000:80"
+    volumes:
+      - ./gym-website:/usr/share/nginx/html:ro
